@@ -1,4 +1,10 @@
 const Contact = () => {
+  const phoneNumber = "+381612419175";
+
+  const handleCallClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <section id="contact_section" className="contact">
       <div className="contact_info">
@@ -9,7 +15,9 @@ const Contact = () => {
             width={40}
             height={40}
           />
-          <p>+381 61 241 91 75</p>
+          <p style={{ cursor: "pointer" }} onClick={handleCallClick}>
+            {phoneNumber}
+          </p>
         </div>
         <div className="contact_info_link">
           <img
@@ -27,7 +35,12 @@ const Contact = () => {
             width={40}
             height={40}
           />
-          <p>sonictransport@gmail.com</p>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="mailto:sonictransport@gmail.com"
+          >
+            <p>sonictransport@gmail.com</p>
+          </a>
         </div>
       </div>
       <div className="contact_map">

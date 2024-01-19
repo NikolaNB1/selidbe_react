@@ -1,6 +1,12 @@
 import { FaPhoneVolume } from "react-icons/fa6";
 
 const Panel = () => {
+  const phoneNumber = "+381612419175";
+
+  const handleCallClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <section>
       <div
@@ -12,8 +18,11 @@ const Panel = () => {
           lineHeight: "27px",
         }}
       >
-        <h3 style={{ fontWeight: "900" }}>
-          <FaPhoneVolume /> +381 61 241 91 75
+        <h3
+          style={{ fontWeight: "900", cursor: "pointer" }}
+          onClick={handleCallClick}
+        >
+          <FaPhoneVolume /> {phoneNumber}
         </h3>
       </div>
       <div className="panel_section">

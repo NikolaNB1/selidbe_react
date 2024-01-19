@@ -1,13 +1,23 @@
-import dostavljac from "../Dostavljac.png";
+import dostavljac from "../images/Dostavljac.png";
 
 const Intro = () => {
+  const phoneNumber = "+381612419175";
+
+  const handleCallClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <section id="intro_section">
-      <div id="carouselExampleCaptions" className="carousel slide">
+      <div
+        id="carouselExampleRide"
+        className="carousel slide"
+        data-bs-ride="true"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carouselExampleRide"
             data-bs-slide-to="0"
             className="active"
             aria-current="true"
@@ -15,13 +25,13 @@ const Intro = () => {
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carouselExampleRide"
             data-bs-slide-to="1"
             aria-label="Slide 2"
           ></button>
           <button
             type="button"
-            data-bs-target="#carouselExampleCaptions"
+            data-bs-target="#carouselExampleRide"
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
@@ -104,30 +114,25 @@ const Intro = () => {
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleRide"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleRide"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div className="phone" onClick={handleCallClick}></div>
     </section>
   );
 };

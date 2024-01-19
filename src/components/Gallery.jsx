@@ -1,3 +1,7 @@
+import slika1 from "../images/IMG_4625.jpg";
+import slika2 from "../images/IMG_4626.jpg";
+import slika3 from "../images/IMG_4627.jpg";
+
 const Gallery = () => {
   return (
     <section className="gallery_section">
@@ -6,32 +10,17 @@ const Gallery = () => {
           <div className="gallery">
             <div className="gallery_item">
               <div className="gallery_item_inner">
-                <img
-                  src="https://selidbenovisad.org/wp-content/uploads/2015/04/fiat-ducato-open_0_0.jpg"
-                  alt="..."
-                  width={300}
-                  height={200}
-                />
+                <img src={slika1} alt="..." width={300} height={200} />
               </div>
             </div>
             <div className="gallery_item">
               <div className="gallery_item_inner">
-                <img
-                  src="https://selidbenovisad.org/wp-content/uploads/2015/04/fiat-ducato-open_0_0.jpg"
-                  alt="..."
-                  width={300}
-                  height={200}
-                />
+                <img src={slika2} alt="..." width={300} height={200} />
               </div>
             </div>
             <div className="gallery_item">
               <div className="gallery_item_inner">
-                <img
-                  src="https://selidbenovisad.org/wp-content/uploads/2015/04/fiat-ducato-open_0_0.jpg"
-                  alt="..."
-                  width={300}
-                  height={200}
-                />
+                <img src={slika3} alt="..." width={300} height={200} />
               </div>
             </div>
           </div>

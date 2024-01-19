@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import logo from "../Sonic-dostava-logo.png";
+import logo from "../images/Sonic-dostava-logo.png";
+import { FaClock } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -7,9 +7,9 @@ const Header = () => {
       <nav className="nav_header">
         <ul className="ul_header">
           <div>
-            <Link to="/">
+            <a href="/">
               <img src={logo} alt="Logo" width="280" height="70" />
-            </Link>
+            </a>
           </div>
           <div className="links_header">
             <li>
@@ -23,7 +23,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="li_header" href="#cenovnik_section">
+              <a className="li_header" href="#pricelist_section">
                 Cenovnik
               </a>
             </li>
@@ -32,6 +32,33 @@ const Header = () => {
                 Kontakt
               </a>
             </li>
+          </div>
+          <div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div>
+                <span>
+                  <i className="clock">
+                    <FaClock />
+                  </i>
+                </span>
+              </div>
+              <div
+                style={{
+                  marginLeft: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <p
+                  style={{ fontSize: "1.2rem", fontWeight: "600", margin: "0" }}
+                >
+                  Pon - Ned: 00-24h
+                </p>
+                <p style={{ fontSize: "1rem", fontWeight: "600", margin: "0" }}>
+                  NON-STOP radno vreme
+                </p>
+              </div>
+            </div>
           </div>
         </ul>
       </nav>

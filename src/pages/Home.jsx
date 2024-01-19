@@ -1,5 +1,5 @@
 import AboutUs from "../components/AboutUs";
-import Cenovnik from "../components/Cenovnik";
+import Pricelist from "../components/Pricelist";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
@@ -16,7 +16,7 @@ const Home = () => {
         <Intro />
         <AboutUs />
         <Gallery />
-        <Cenovnik />
+        <Pricelist />
         <Contact />
       </main>
       <Footer />

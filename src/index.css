@@ -51,7 +51,7 @@ header {
 }
 
 #intro_section {
-  background-image: url(https://sonicdostava.com/wp-content/uploads/2022/03/Cover.png);
+  background-image: url(../src/images/Cover.png);
   background-size: cover;
   padding: 20px;
   height: 80vh;
@@ -59,7 +59,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-#carouselExampleCaptions {
+#carouselExampleRide {
   width: 60%;
 }
 
@@ -70,7 +70,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
-#cenovnik_section {
+#pricelist_section {
   background-color: #fff;
   padding: 5rem 5rem;
   display: flex;
@@ -93,4 +93,8 @@ header {
 .about_text_inner p {
   font-size: 1.2rem;
   padding: 5px;
+}
+.clock svg {
+  width: 50px;
+  height: 50px;
 }
