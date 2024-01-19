@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gallery_wrapper {
+  padding: 0 20rem;
+}
+.gallery_wrapper_inner {
+  padding: unset;
+  width: 90%;
+}
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+}
+.gallery_item {
+  border: 0.3rem solid #444;
+  box-shadow: 0 0 1rem 0.05rem #aaa7a7;
+  border-radius: 5px;
+  padding: 1.2rem;
+  flex-grow: 0;
+  background: repeating-linear-gradient(
+      45deg,
+      #333,
+      #333 0.2rem,
+      transparent 0,
+      transparent 6rem
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 3rem,
+      #333 0,
+      #333 3.2rem
+    );
+}
+.gallery_item_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.gallery_item_inner img {
+  border-radius: 5px;
+}
+.panel_section {
+  background-color: #333;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+.panel_section h3 {
+  font-size: 25px;
+  line-height: 27px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+.text {
+  text-align: center;
+}
+
+.panel_section p {
+  display: inline-block;
+  margin: 0;
+  padding: 15px;
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.contact_info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.contact_info_link {
+  display: flex;
+  align-items: center;
+}
+.contact_info_link p {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer {
+  border-top: 1px solid #049de0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  padding: 0;
+}
+.footer_logo {
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_copyrights {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.footer p {
+  font-size: 1rem;
+}
