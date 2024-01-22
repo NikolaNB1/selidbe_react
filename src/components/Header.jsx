@@ -30,7 +30,7 @@ const Header = () => {
           <>
             <ul className="ul_header">
               <div>
-                <a href="/sonic_selidbe">
+                <a href="/selidbe_react">
                   <img src={logo} alt="Logo" width="180" height="70" />
                 </a>
               </div>
@@ -94,7 +94,7 @@ const Header = () => {
           <>
             <ul className="ul_header">
               <div>
-                <a href="/sonic_selidbe">
+                <a href="/selidbe_react">
                   <img src={logo} alt="Logo" width="220" height="70" />
                 </a>
               </div>
@@ -158,7 +158,7 @@ const Header = () => {
         ) : (
           <ul className="ul_header">
             <div>
-              <a href="/sonic_selidbe">
+              <a href="/selidbe_react">
                 <img src={logo} alt="Logo" width="280" height="70" />
               </a>
             </div>

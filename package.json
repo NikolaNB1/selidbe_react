@@ -1,6 +1,6 @@
 {
   "name": "sonic-transport",
-  "homepage": "/sonic_selidbe",
+  "homepage": "/selidbe_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

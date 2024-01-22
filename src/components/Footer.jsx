@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer_logo">
-        <a href="/sonic_selidbe">
+        <a href="/selidbe_react">
           <img src={logo} alt="Logo" width="280" height="70" />
         </a>
       </div>
