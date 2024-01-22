@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Routes>
-      <Route index element={<Home />}></Route>
+      <Route index path="/selidbe_react" element={<Home />}></Route>
     </Routes>
   );
 }
