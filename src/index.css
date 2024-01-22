@@ -27,7 +27,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .links_header {
   display: flex;
@@ -49,20 +49,163 @@ header {
   color: #049de0;
   border-bottom: 0.5px solid #049de0;
 }
+.burger_mobile {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #0469b7;
+}
+.burger_mobile a {
+  text-decoration: none;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #0469b7;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #049de0;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 #intro_section {
   background-image: url(../src/images/Cover.png);
   background-size: cover;
   padding: 20px;
-  height: 80vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #carouselExampleRide {
-  width: 60%;
+  width: 50%;
+}
+.carousel-inner img {
+  max-height: 400px;
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1391px) {
+  .carousel-inner img {
+    height: 350px;
+  }
+  #carouselExampleRide {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+  #carouselExampleRide {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .carousel-caption {
+    height: auto;
+  }
+  .carousel-caption h5 {
+    font-size: small;
+  }
+  .carousel-caption p {
+    font-size: small;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    height: auto;
+  }
+  .carousel-caption h5 {
+    font-size: x-small;
+  }
+  .carousel-caption p {
+    font-size: x-small;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+  #intro_section {
+    height: 40vh;
+  }
+  #carouselExampleRide {
+    width: 100%;
+  }
+}
+.phone {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../src/images/phone-icon-2048x2048-nottqc8j.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .phone {
+    right: 30px;
+    bottom: 30px;
+  }
+}
 #about_us_section {
   background-color: #fff;
   padding: 5rem 5rem;
@@ -70,6 +213,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
+
 #pricelist_section {
   background-color: #fff;
   padding: 5rem 5rem;
@@ -89,6 +233,36 @@ header {
 .about_text_inner {
   padding-top: 3rem;
   width: 50%;
+}
+@media (max-width: 1400px) {
+  .about_text_inner {
+    padding-top: 2rem;
+    width: 80%;
+  }
+  .about_text h2 {
+    font-size: 2rem;
+  }
+  #about_us_section {
+    padding: 3rem 3rem;
+  }
+  #pricelist_section {
+    padding: 3rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  #about_us_section {
+    padding: 2rem 2rem;
+  }
+  #pricelist_section {
+    padding: 2rem 2rem;
+  }
+  .about_text_inner {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .about_text h2 {
+    font-size: 1.5rem;
+  }
 }
 .about_text_inner p {
   font-size: 1.2rem;

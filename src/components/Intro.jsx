@@ -42,14 +42,12 @@ const Intro = () => {
               src="https://img.pikbest.com/wp/202347/pallet-packed-cargo-van-loaded-with-pallets-of-goods-3d-render_9771298.jpg!sw800"
               className="d-block w-100"
               alt="..."
-              width={300}
-              height={500}
               style={{
                 borderRadius: "30px",
               }}
             />
             <div
-              className="carousel-caption d-none d-md-block"
+              className="carousel-caption d-md-block"
               style={{
                 backgroundColor: "#222",
                 opacity: 0.9,
@@ -58,25 +56,20 @@ const Intro = () => {
               }}
             >
               <h5>TRANSPORT ROBE</h5>
-              <p>
-                Naša agencija tu je da vas reši sve nepotrebne brige koja se
-                tiče selidbe.
-              </p>
+              <p>Siguran i pouzdan transport.</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
               src={dostavljac}
-              className="d-block w-50"
+              className="d-block w-75"
               alt="..."
-              width={200}
-              height={500}
               style={{
                 borderRadius: "30px",
               }}
             />
             <div
-              className="carousel-caption d-none d-md-block"
+              className="carousel-caption d-md-block"
               style={{
                 backgroundColor: " #222",
                 opacity: "90%",
@@ -85,22 +78,20 @@ const Intro = () => {
               }}
             >
               <h5>PAKOVANJE</h5>
-              <p>Obučeni radnici i kompletna zaštita nameštaja.</p>
+              <p>Obučeni radnici i zaštita nameštaja.</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="https://thumbs.dreamstime.com/b/clock-handshake-table-94286325.jpg"
+              src="https://davis-sanchez.com/wp-content/uploads/2020/06/business3.jpg"
               className="d-block w-100"
               alt="..."
-              width={200}
-              height={500}
               style={{
                 borderRadius: "30px",
               }}
             />
             <div
-              className="carousel-caption d-none d-md-block"
+              className="carousel-caption d-md-block"
               style={{
                 backgroundColor: " #222",
                 opacity: "90%",
@@ -114,22 +105,28 @@ const Intro = () => {
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleRide"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleRide"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
       <div className="phone" onClick={handleCallClick}></div>
