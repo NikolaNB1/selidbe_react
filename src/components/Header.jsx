@@ -30,13 +30,13 @@ const Header = () => {
           <>
             <ul className="ul_header">
               <div>
-                <a href="/">
+                <a href="/sonic_selidbe">
                   <img src={logo} alt="Logo" width="180" height="70" />
                 </a>
               </div>
               <div>
                 <li className="burger_mobile">
-                  <Menu isOpen={true} width={"300px"} right>
+                  <Menu isOpen={false} width={"300px"} right>
                     <a className="menu-item" href="#intro_section">
                       Početna
                     </a>
@@ -94,7 +94,7 @@ const Header = () => {
           <>
             <ul className="ul_header">
               <div>
-                <a href="/">
+                <a href="/sonic_selidbe">
                   <img src={logo} alt="Logo" width="220" height="70" />
                 </a>
               </div>
@@ -137,7 +137,7 @@ const Header = () => {
               </div>
               <div>
                 <li className="burger_mobile">
-                  <Menu isOpen={true} width={"300px"} right>
+                  <Menu isOpen={false} width={"300px"} right>
                     <a className="menu-item" href="#intro_section">
                       Početna
                     </a>
@@ -158,7 +158,7 @@ const Header = () => {
         ) : (
           <ul className="ul_header">
             <div>
-              <a href="/">
+              <a href="/sonic_selidbe">
                 <img src={logo} alt="Logo" width="280" height="70" />
               </a>
             </div>

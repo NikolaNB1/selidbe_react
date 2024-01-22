@@ -37,7 +37,6 @@ const Panel = () => {
             }}
           >
             <h3
-              className="fw-bold fs-5 fs-lg-3"
               style={{
                 cursor: "pointer",
               }}
@@ -48,21 +47,19 @@ const Panel = () => {
           </div>
           <div className="panel_section" style={{ padding: "10px" }}>
             <div className="text">
-              <h3 className="fs-5 fs-lg-3">
+              <h3>
                 <span>
-                  <p style={{ padding: "8px" }} className="fs-6 fs-lg-4">
-                    SELIDBE
-                  </p>
+                  <p style={{ padding: "8px", fontSize: "14px" }}>SELIDBE</p>
 
-                  <p style={{ padding: "8px" }} className="fs-6 fs-lg-4">
+                  <p style={{ padding: "8px", fontSize: "14px" }}>
                     KOMBI PREVOZ
                   </p>
 
-                  <p style={{ padding: "8px" }} className="fs-6 fs-lg-4">
+                  <p style={{ padding: "8px", fontSize: "14px" }}>
                     MONTAŽA / DEMONTAŽA
                   </p>
 
-                  <p style={{ padding: "8px" }} className="fs-6 fs-lg-4">
+                  <p style={{ padding: "8px", fontSize: "14px" }}>
                     ODNOŠENJE STARIH I NEPOTREBNIH STVARI
                   </p>
                 </span>
