@@ -39,7 +39,7 @@ const Contact = () => {
             style={{ textDecoration: "none", color: "black" }}
             href="mailto:sonictransport@gmail.com"
           >
-            <p>sonictransport@gmail.com</p>
+            <p>sonicselidbe@gmail.com</p>
           </a>
         </div>
       </div>
