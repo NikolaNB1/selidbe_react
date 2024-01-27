@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/selidbe_react/static/css/main.ece2a7b9.css",
-    "main.js": "/selidbe_react/static/js/main.80d103b4.js",
+    "main.js": "/selidbe_react/static/js/main.467034a7.js",
     "static/media/Dostavljac.png": "/selidbe_react/static/media/Dostavljac.68cd70e56ffd22c15e03.png",
     "static/media/IMG_4625.jpg": "/selidbe_react/static/media/IMG_4625.860778abb2d9b206e7c4.jpg",
     "static/media/IMG_4626.jpg": "/selidbe_react/static/media/IMG_4626.f00f697bc2f22ae4ad1b.jpg",
@@ -11,10 +11,10 @@
     "static/media/Sonic-dostava-logo.png": "/selidbe_react/static/media/Sonic-dostava-logo.bc009fdc5d19c02b7446.png",
     "index.html": "/selidbe_react/index.html",
     "main.ece2a7b9.css.map": "/selidbe_react/static/css/main.ece2a7b9.css.map",
-    "main.80d103b4.js.map": "/selidbe_react/static/js/main.80d103b4.js.map"
+    "main.467034a7.js.map": "/selidbe_react/static/js/main.467034a7.js.map"
   },
   "entrypoints": [
     "static/css/main.ece2a7b9.css",
-    "static/js/main.80d103b4.js"
+    "static/js/main.467034a7.js"
   ]
 }
