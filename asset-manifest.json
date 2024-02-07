@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f1b501a.css",
-    "main.js": "/static/js/main.4dcd9eb2.js",
+    "main.js": "/static/js/main.fef89a76.js",
     "static/media/Dostavljac.png": "/static/media/Dostavljac.68cd70e56ffd22c15e03.png",
     "static/media/IMG_4625.jpg": "/static/media/IMG_4625.860778abb2d9b206e7c4.jpg",
     "static/media/IMG_4626.jpg": "/static/media/IMG_4626.f00f697bc2f22ae4ad1b.jpg",
@@ -11,10 +11,10 @@
     "static/media/Sonic-dostava-logo.png": "/static/media/Sonic-dostava-logo.bc009fdc5d19c02b7446.png",
     "index.html": "/index.html",
     "main.4f1b501a.css.map": "/static/css/main.4f1b501a.css.map",
-    "main.4dcd9eb2.js.map": "/static/js/main.4dcd9eb2.js.map"
+    "main.fef89a76.js.map": "/static/js/main.fef89a76.js.map"
   },
   "entrypoints": [
     "static/css/main.4f1b501a.css",
-    "static/js/main.4dcd9eb2.js"
+    "static/js/main.fef89a76.js"
   ]
 }
