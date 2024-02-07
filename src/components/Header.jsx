@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   const [isTabletScreen, setIsTabletScreen] = useState(
     window.innerWidth <= 1490
   );
@@ -18,6 +23,7 @@ const Header = () => {
     };
 
     window.addEventListener("resize", handleResize);
+    document.cookie = "cookieName=cookieValue; SameSite=None; Secure";
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -36,17 +42,38 @@ const Header = () => {
               </div>
               <div>
                 <li className="burger_mobile">
-                  <Menu isOpen={false} width={"300px"} right>
-                    <a className="menu-item" href="#intro_section">
+                  <Menu
+                    isOpen={menuOpen}
+                    onStateChange={(state) => setMenuOpen(state.isOpen)}
+                    width={"300px"}
+                    right
+                  >
+                    <a
+                      className="menu-item"
+                      href="#intro_section"
+                      onClick={closeMenu}
+                    >
                       Početna
                     </a>
-                    <a className="menu-item" href="#about_us_section">
+                    <a
+                      className="menu-item"
+                      href="#about_us_section"
+                      onClick={closeMenu}
+                    >
                       O nama
                     </a>
-                    <a className="menu-item" href="#pricelist_section">
+                    <a
+                      className="menu-item"
+                      href="#pricelist_section"
+                      onClick={closeMenu}
+                    >
                       Cenovnik
                     </a>
-                    <a className="menu-item" href="#contact_section">
+                    <a
+                      className="menu-item"
+                      href="#contact_section"
+                      onClick={closeMenu}
+                    >
                       Kontakt
                     </a>
                     <div>
@@ -137,17 +164,38 @@ const Header = () => {
               </div>
               <div>
                 <li className="burger_mobile">
-                  <Menu isOpen={false} width={"300px"} right>
-                    <a className="menu-item" href="#intro_section">
+                  <Menu
+                    isOpen={menuOpen}
+                    onStateChange={(state) => setMenuOpen(state.isOpen)}
+                    width={"300px"}
+                    right
+                  >
+                    <a
+                      className="menu-item"
+                      href="#intro_section"
+                      onClick={closeMenu}
+                    >
                       Početna
                     </a>
-                    <a className="menu-item" href="#about_us_section">
+                    <a
+                      className="menu-item"
+                      href="#about_us_section"
+                      onClick={closeMenu}
+                    >
                       O nama
                     </a>
-                    <a className="menu-item" href="#pricelist_section">
+                    <a
+                      className="menu-item"
+                      href="#pricelist_section"
+                      onClick={closeMenu}
+                    >
                       Cenovnik
                     </a>
-                    <a className="menu-item" href="#contact_section">
+                    <a
+                      className="menu-item"
+                      href="#contact_section"
+                      onClick={closeMenu}
+                    >
                       Kontakt
                     </a>
                   </Menu>
