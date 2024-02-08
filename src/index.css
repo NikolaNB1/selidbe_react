@@ -188,6 +188,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   #carouselExampleRide {
     width: 100%;
   }
+  .nav_header {
+    margin: 0;
+  }
 }
 .phone {
   position: fixed;

@@ -37,7 +37,7 @@ const Header = () => {
             <ul className="ul_header">
               <div>
                 <a href="/">
-                  <img src={logo} alt="Logo" width="180" height="70" />
+                  <img src={logo} alt="Logo" width="190" height="70" />
                 </a>
               </div>
               <div>
